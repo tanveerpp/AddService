@@ -4,7 +4,7 @@ spring:
   application:
     name: FirstWeb-2
   datasource:
-    url: jdbc:postgresql://dpg-d1ega82li9vc73a1d5tg-a.oregon-postgres.render.com:5432/ppspr
+    url: jdbc:postgresql://dpg-d1ega82li9vc73a1d5tg-a.oregon-postgres.render.com:5432/ppspr_icf1
     username: ppspr_icf1_user
     password: YhjgJpTL5H3zaPfH0y1EppPKos4DP0mx
     driver-class-name: org.postgresql.Driver
