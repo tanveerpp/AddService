@@ -1,16 +1,14 @@
+server:
+  port: 8081
 spring:
   application:
     name: address
   datasource:
-    url: jdbc:mysql://localhost:3306/spr430
-    username: root
-    password: root
-    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:postgresql://dpg-d1efnjje5dus73bcc9o0-a.oregon-postgres.render.com:5432/ppdb
+    username: ppdb_em5e_user
+    password: F9dlSTHjOA3DQpSiPTyGafx0aPmFJ6ck
+    driver-class-name: org.postgresql.Driver
   jpa:
+    show-sql: true
     hibernate:
       ddl-auto: update
-    show-sql: true
-server:
-  port: 8082
-
-  
