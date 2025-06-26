@@ -1,13 +1,22 @@
 server:
   port: 8082
+
 spring:
   application:
     name: address
+  
   datasource:
     url: jdbc:postgresql://dpg-d1efnjje5dus73bcc9o0-a.oregon-postgres.render.com:5432/ppdb
     username: ppdb_em5e_user
     password: F9dlSTHjOA3DQpSiPTyGafx0aPmFJ6ck
     driver-class-name: org.postgresql.Driver
+    hikari:
+      connection-timeout: 60000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      maximum-pool-size: 10
+      minimum-idle: 5
+  
   jpa:
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
